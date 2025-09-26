@@ -1,0 +1,17 @@
+[package]
+name = "jio-pow"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jio_hashes = { path = "../../jio_hashes" }
+jio_math = { path = "../../jio_math" }
+consensus-core = { path = "../core" }
+sha3 = "0.10"
+
+[dependencies.wasm-bindgen]
+version = "0.2"
+optional = true
+
+[features]
+wasm32-sdk = ["wasm-bindgen"]
